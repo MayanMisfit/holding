@@ -8,37 +8,55 @@
 
   <style>
 
-body
-{
-  background: #000000;
-}
-
-p 
-{
-text-align: center;
-color: #ffffff;
-}
-
-.title
-{
-  color: #ffffff;
-  text-align: center;
-  padding-top: 50px;
-}
-
-table.unstyledTable {
-  font-family: Arial, Helvetica, sans-serif;
+div.topazCells {
+  border: 4px solid #555555;
+  background-color: #555555;
   width: 100%;
-  height: 236px;
+  height: 219%;
   text-align: left;
+  border-collapse: collapse;
 }
-table.unstyledTable td, table.unstyledTable th {
-  padding: 3px 7px;
+.divTable.topazCells .divTableCell, .divTable.topazCells .divTableHead {
+  border: 1px solid #555555;
+  padding: 4px 7px;
 }
-table.unstyledTable tbody td {
-  font-size: 15px;
-  color: #ffffff;
+.divTable.topazCells .divTableBody .divTableCell {
+  font-size: 13px;
+  color: #FFFFFF;
 }
+.divTable.topazCells .divTableRow:nth-child(even) {
+  background: #A43152;
+}
+.divTable.topazCells .divTableCell:nth-child(even) {
+  background: #A43152;
+}
+.topazCells .tableFootStyle {
+  font-size: 13px;
+}
+.topazCells .tableFootStyle .links {
+	 text-align: right;
+}
+.topazCells .tableFootStyle .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #A43152;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.topazCells.outerTableFooter {
+  border-top: none;
+}
+.topazCells.outerTableFooter .tableFootStyle {
+  padding: 3px 5px; 
+}
+/* DivTable.com */
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}
 
   </style>
 
@@ -66,35 +84,36 @@ table.unstyledTable tbody td {
 </div>
 
 
-<table class="unstyledTable" style="height: 235px;" width="433">
-  <tbody>
-  <tr>
-  <td>Chapter 1</td>
-  <td>Verse 1</td>
-  <td>All bunnies must die</td>
-  </tr>
-  <tr>
-  <td>Chapter 1</td>
-  <td>Verse 2</td>
-  <td>All bunnies must die by fire</td>
-  </tr>
-  <tr>
-  <td>Chapter 1</td>
-  <td>Verse 3</td>
-  <td>Any bunny found to have survived death by fire shall be nuked from orbit</td>
-  </tr>
-  <tr>
-  <td>Chapter 1</td>
-  <td>Verse 4</td>
-  <td>Any bunny found to have survived death by fire and nuking shall be considdered the ultimate evil and be cast into the eternal void</td>
-  </tr>
-  <tr>
-  <td>Chapter 1</td>
-  <td>Verse 5</td>
-  <td>All bunny death shall be considdered tribute to the Misfit</td>
-  </tr>
-  </tbody>
-  </table>
+<div class="divTable topazCells">
+  <div class="divTableBody">
+  <div class="divTableRow">
+  <div class="divTableCell">Chapter 1</div>
+  <div class="divTableCell">Verse 1</div>
+  <div class="divTableCell">All bunnies must die</div>
+  </div>
+  <div class="divTableRow">
+  <div class="divTableCell">Chapter 1</div>
+  <div class="divTableCell">Verse 2</div>
+  <div class="divTableCell">All bunnies must die by fire</div>
+  </div>
+  <div class="divTableRow">
+  <div class="divTableCell">Chapter 1</div>
+  <div class="divTableCell">Verse 3</div>
+  <div class="divTableCell">Any bunny found to have survived death by fire shall be nuked from orbit</div>
+  </div>
+  <div class="divTableRow">
+  <div class="divTableCell">Chapter 1</div>
+  <div class="divTableCell">Verse 4</div>
+  <div class="divTableCell">&nbsp;Any bunny found to have survived death by fire and nuking shall be considered the ultimate evil and shal be cast into the eternal void</div>
+  </div>
+  <div class="divTableRow">
+  <div class="divTableCell">Chapter 1</div>
+  <div class="divTableCell">Verse 5</div>
+  <div class="divTableCell">All bunny deaths shall be in tribute to the Misfit</div>
+  </div>
+  
+  </div>
+  </div>
 
   <p> So Sayeth the Misfit</p>
 </body>
